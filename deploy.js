@@ -3,10 +3,12 @@ const Web3 = require('web3');
 const { interface, bytecode } = require('./compile');
 
 const provider = new HDWalletProvider(
-'light love snap paper suspect output pretty melt debris voice abandon enough',
-  'https://rinkeby.infura.io/e6w9tt2BMECtyZ9k6QTU'
+'tragic rigid snap drive outer infant act tired trip coffee voice unfair',
+  //'https://rinkeby.infura.io/e6w9tt2BMECtyZ9k6QTU'
+  'https://rinkeby.infura.io/uSt7BzH9NUQK0BuKZd5z'
 );
 const web3 = new Web3(provider);
+
 const deploy = async () => {
  const accounts = await web3.eth.getAccounts();
  console.log('Attempting to deploy from account',accounts[0]);
